@@ -1,0 +1,10 @@
+no_of_students = int(input("enter number of students:"))
+weight_in_lbs = list()
+weight_in_kgs = list()
+for each in range(no_of_students):
+    weight_lbs = int(input("enter weight of student in lbs: ".format(each+1)))
+    weight_in_lbs.insert(each,weight_lbs)
+    weight_kgs = float("%f" %(weight_lbs*0.453592))
+    weight_in_kgs.insert(each,weight_kgs)
+print("weight of students in lbs:",weight_in_lbs) 
+print("weight of students in kgs:",weight_in_kgs)    
